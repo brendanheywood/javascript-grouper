@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Grouper tests</title>
+<script src="../grouper.js"></script>
+<script src="data.js"></script>
+
+</head>
+
+<body>
+
+<script>
+
+var html;
+
+html = grouper(data, function(item){
+	return Array(
+	'<h1>Person:'+item.name+'</h1><blockquote>',
+		'<h2>House: '+item.house+'</h2><ul>',
+			'<li>'+item.flatmate +': '+item.years+'</li>',
+		'</ul><p>end house</p>',
+	'</blockquote><p>end person</p>'
+	);
+});
+
+document.write(html);
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
