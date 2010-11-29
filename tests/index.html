@@ -7,22 +7,18 @@
 </head>
 
 <body>
-
+<h1>Test 1, nested blockquote and li<h1>
 <script>
-
-var html;
-
-html = grouper(data, function(item){
+document.write(grouper(data, function(item){
 	return Array(
-	'<h1>Person:'+item.name+'</h1><blockquote>',
-		'<h2>House: '+item.house+'</h2><ul>',
+	'<h2>Person:'+item.name+'</h2><blockquote>',
+		'<h3>House: '+item.house+'</h3><ul>',
 			'<li>'+item.flatmate +': '+item.years+'</li>',
-		'</ul><p>end house</p>',
-	'</blockquote><p>end person</p>'
+		'</ul>',
+	'</blockquote>'
 	);
-});
+}));
 
-document.write(html);
 
 
 
