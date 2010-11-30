@@ -35,7 +35,11 @@ function grouper(
 				}
 			}
 		}
-		if (last && matchDepth < lastMatchDepth) { 
+		if (matchDepth > halfSize){
+			//html += '!! '+matchDepth + ' , '+lastMatchDepth;
+			//html += current.slice(lastMatchDepth - 1, matchDepth).join('');
+			matchDepth = halfSize;
+		} else if (last && matchDepth < lastMatchDepth) { 
 			html += last.slice(arraySize - lastMatchDepth+1, arraySize - matchDepth + 1).join('');
 			html += current.slice(matchDepth - 1, halfSize).join('');
 			matchDepth = halfSize;

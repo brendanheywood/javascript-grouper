@@ -5,6 +5,8 @@ var data = [
 	{name: 'Brendan',    house: 'Browns',    flatmate: 'Bruce2',   years: 1},
 	{name: 'Brendan',    house: 'Browns',    flatmate: 'Sam2',     years: 1},
 	{name: 'Brendan',    house: 'Browns',    flatmate: 'Mike',    years: 1},
+	{name: 'Brendan',    house: 'Browns',    flatmate: 'Mike',    years: 1},
+	{name: 'Brendan',    house: 'Browns',    flatmate: 'Mike',    years: 1},
 	{name: 'Brendan',    house: 'Browns',    flatmate: 'Jason',   years: 1},
 	{name: 'Brendan',    house: 'Ohio',      flatmate: 'Ben',     years: 1},
 	{name: 'Brendan',    house: 'Ohio',      flatmate: 'Alex',    years: 1},
