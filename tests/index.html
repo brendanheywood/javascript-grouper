@@ -1,6 +1,9 @@
 <html>
 <head>
 <title>Grouper tests</title>
+<!--
+<script src="../grouper-min.js"></script>
+-->
 <script src="../grouper.js"></script>
 <script src="data.js"></script>
 
@@ -18,13 +21,33 @@ document.write(grouper(data, function(item){
 	'</blockquote>'
 	);
 }));
-
-
-
-
 </script>
 
 
+<h1>Test 2, nested table and without rowspan<h1>
+<script>
+document.write(grouper(data, function(item){
+	return Array(
+	'<h2>Person:'+item.name+'</h2><table><tr><th>House</th><th>Flatmate</th></tr>',
+		'<tr><td>'+item.house+'</td><td>'+item.flatmate +': '+item.years+'</td></tr>',
+	'</table>'
+	);
+}));
+</script>
+
+
+<h1>Test 3, nested table and with rowspan<h1>
+<script>
+document.write(grouper(data, function(item){
+	return Array(
+	'<h2>Person:'+item.name+'</h2><table><tr><th>House</th><th>Flatmate</th></tr>',
+		'<tr><td rowspan="'+item.count+'">'+item.house+'</td>',
+			'<td>'+item.flatmate +': '+item.years+'</td>',
+		'</tr>',
+	'</table>'
+	);
+}, true));
+</script>
 
 
 </body>

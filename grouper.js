@@ -21,7 +21,7 @@ function grouper(
 	lastMatchDepth = 1;
 	matchDepth = halfSize;
 
-	for (c in items ) { 
+	for (c=0; c<items.length;c++) { 
 		item = items[c];
 		current = render(item);
 
