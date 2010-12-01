@@ -49,6 +49,18 @@ document.write(grouper(data, function(item){
 }, true));
 </script>
 
+<h1>Test 4, no data<h1>
+<script>
+document.write(grouper(window.nothing, function(item){
+	return Array(
+	'<h2>Person:'+item.name+'</h2><table><tr><th>House</th><th>Flatmate</th></tr>',
+		'<tr><td rowspan="'+item.count+'">'+item.house+'</td>',
+			'<td>'+item.flatmate +': '+item.years+'</td>',
+		'</tr>',
+	'</table>'
+	);
+}, true));
+</script>
 
 </body>
 

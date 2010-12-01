@@ -14,6 +14,9 @@ function grouper(
 		lastMatchDepth, matchDepth;
 
 	// first find the size of the array returned
+	if (!items){
+		return '';
+	}
 	current = render(items[0]);
 	arraySize = current.length;
 	halfSize = (arraySize + 1) / 2;
