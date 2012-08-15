@@ -45,5 +45,14 @@ This logic works because the first and last components (the open and close div) 
 
 This concept can be extended up to any level of nested, ie it could have 5, 7, 9 etc components.
 
+Th javascript grouper implements all the funky logic to decide which components are redundant, you pass it a:
+
+* list of data items
+* a render function which turns each item into an odd number of compnents like above
+
+It then does it's magic and returns a string
+
+
+
 
 
